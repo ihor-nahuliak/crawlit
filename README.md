@@ -14,8 +14,8 @@ class ProfileItem(Item):
     last_name = fields.String('.last-name::text')
     phones_list = fields.String('.phone::attr(href)', multi_selector=True)
     emails_list = fields.Email('.email::attr(href)', multi_selector=True)
-    gender = fields.String('.gender', choices=('m', 'f', 'u'))
-    age = fields.Integer('.age')
+    gender = fields.String('.gender::text', choices=('m', 'f', 'u'))
+    age = fields.Integer('.age::text')
 
 
 class ProfileSpider(Spider):
