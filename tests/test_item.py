@@ -32,7 +32,7 @@ class ContactItemValidatorPipeline:
 
 
 class ScrupinghubContactSpider(scrapy.Spider):
-    name = 'scrupinghub_contact_item'
+    name = 'scrupinghub_contact_spider'
     item_class = ScrupinghubContactItem
     start_urls = ['https://scrapinghub.com/contact']
     custom_settings = {
