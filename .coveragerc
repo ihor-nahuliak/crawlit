@@ -1,0 +1,41 @@
+[paths]
+source =
+    crawlit/
+
+[report]
+ignore_errors = True
+
+omit =
+    tests/
+
+# Regexes for lines to exclude from consideration
+exclude_lines =
+    # Ignore marked lines
+    pragma: no cover
+
+    # Ignore docstrings
+    """
+
+    # Ignore representations
+    def __repr__
+
+    # Ignore not covered errors
+    assert
+    raise AssertionError
+    raise NotImplementedError
+
+    # Don't complain if non-runnable code isn't run:
+    if __name__ == .__main__.:
+
+    # Ignore version compatibility:
+    if PY2:
+
+
+[run]
+data_file = tests/.reports/.coverage
+
+[html]
+directory = tests/.reports/cover
+
+[xml]
+output = tests/.reports/coverage.xml

@@ -1,0 +1,31 @@
+[flake8]
+ignore = F812
+exclude =
+    .git,
+    .ssh,
+    .env,
+    env,
+    env2.7,
+    env3.3,
+    env3.4,
+    env3.5,
+    env3.6,
+    env3.7,
+    envpypy,
+    envpypy3,
+    build,
+    develop-eggs,
+    dist,
+    downloads,
+    eggs,
+    .eggs,
+    lib,
+    lib64,
+    parts,
+    sdist,
+    var,
+    wheels,
+    requirements,
+    __pycache__
+max-complexity = 10
+max-line-length = 80
